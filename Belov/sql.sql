@@ -7,7 +7,7 @@ Create table place
 id_dep int4 not null,
 name varchar not null,
 position varchar not null,
-FOREIGN KEY (id_dep) REFERENCES depertaments (id_dep));
+FOREIGN KEY (id_dep) REFERENCES departments (id_dep));
 
 Create table objects
 (id_ob serial4 primary key,
@@ -479,3 +479,4 @@ SELECT * FROM v_full_history;
 SELECT * FROM fn_get_my_inventory(1); 
 
 SELECT * FROM fn_get_my_inventory(2);
+
